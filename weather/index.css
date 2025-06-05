@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif ;
+}
+
+body{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    height: 570px;
+    width: 450px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    border-radius: 15px;
+}
+.search{
+    display: flex;
+    margin: 2rem;
+    justify-content: space-between;
+}
+.search-bar input{
+    border: 0;
+    outline: 0;
+    border-radius:20px ;
+    height: 3rem;
+    width: 20rem;
+    padding-left: 1rem;
+}
+
+.search-btn button{
+    height:3rem ;
+    width: 3rem;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-btn img{
+    height: 20px;
+    
+}
+.weather-icon{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.weather-icon img{
+    width: 170px;
+
+}
+.temp{
+    color: white;
+    margin-top: 1rem; 
+    /* padding: 10px; */
+    
+}
+.city{
+    color: white;
+    margin-top: 1rem; 
+}
+
+.details{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.humidity img{
+    width: 50px;
+}
+.humidity{
+    display: flex;
+    color: white;
+    margin-left: 3rem;
+}
+.information1{
+    display: flex; 
+    /* align-items: center; */ 
+    flex-direction: column; 
+    justify-content: space-between;
+    margin-left: .8rem;
+    
+}
+.Wind img{
+    width: 50px;
+}
+.Wind{
+    display: flex;
+    color: white;
+    margin-right: 3rem;
+}
+.information2{
+    display: flex; 
+    /* align-items: center; */ 
+    flex-direction: column; 
+    justify-content: space-between;
+    margin-left: .8rem;
+    
+}
+
+.oops {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.oops h2{
+    margin-left: 10px;
+}
+
+
+/* API KEY
+3bbbe091c9a2049af9dee4bc4433467e */
+
+
+/* API CALL 
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}*/
